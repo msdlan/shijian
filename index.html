@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>陌生的澜制作</title>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    /*偷看代码没亩*/
+    #h1{
+      position:absolute;
+      top:-90px;
+      left:280px;
+      font-size:130px;
+      letter-spacing:10px;
+      width:610px;
+      background: linear-gradient(125deg,#ff6df6,#48c3ff);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    /*偷看代码没亩*/
+    body{
+      transform:rotate(90deg);
+      background-color:black;
+    }
+    <!--偷看代码没亩-->
+    </style>
+  </head>
+  <body>
+     <h1 id="h1"></h1>
+     <script>
+     function shijian(){
+     var mytime = new Date();
+     var h = mytime.getHours();
+     if(h<10){
+     h="0"+h
+     }
+     var m = mytime.getMinutes();
+     if(m<10){
+     m="0"+m
+     }
+     var S = mytime.getSeconds();
+     if(S<10){
+     S="0"+S
+     }
+     var h1 = document.getElementById("h1")
+     h1.innerHTML = h+":"+m+":"+S
+     }
+     <!--偷看代码没亩-->
+     shijian();
+     <!--偷看代码没亩-->
+     setInterval("shijian()",1000)
+     </script>
+     <!--偷看代码没亩-->
+  </body>
+  <!--偷看代码没亩-->
+</html>
